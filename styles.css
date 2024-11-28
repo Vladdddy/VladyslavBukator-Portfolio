@@ -412,7 +412,7 @@ body {
         justify-content: space-between;
         z-index: 10;
         padding: 1rem;
-        background-color: #0000002c;
+        background-color: #000000;
     }
 
     #menu {
@@ -428,12 +428,13 @@ body {
     .menu-container {
         display: none;
         justify-content: center;
-        height: 40vh;
+        align-items: center;
+        height: 100vh;
         width: 100vw;
         position: absolute;
         backdrop-filter: blur(10px);
         top: 0;
-        background-color: #00000082;
+        background-color: #000000;
         overflow: hidden;
         animation: menu 0.3s linear;
         padding-top: 1rem;
@@ -442,14 +443,15 @@ body {
     .content-menu {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        transform: translateY(4rem);
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
     }
 
     .content-menu a {
         text-decoration: none;
         color: var(--text-color);
-        font-size: 20px;
+        font-size: 24px;
         font-weight: var(--text-weight);
     }
 
@@ -596,11 +598,11 @@ body {
 
     @keyframes menu {
         0% {
-            transform: translateY(-100%);
+            transform: translateX(-100%);
         }
 
         100% {
-            transform: translateY(0);
+            transform: translateX(0);
         }
     }
 }
