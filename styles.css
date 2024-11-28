@@ -376,16 +376,26 @@ body {
 
 
 
+/*! -------------------- Ipad -------------------- !*/
+@media screen and (max-width: 1440px) {
 
+    /* -------------------- Call to action -------------------- */
+    .call-to-action {
+        height: auto;
+    }
 
+    .call-p {
+        font-weight: var(--text-weight);
+        font-size: var(--regular-text-size);
+        color: var(--text-color);
+        text-align: center;
+    }
 
-
-
-
-
-
-
-
+    .centerator {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 /*! -------------------- Mobile -------------------- !*/
 @media screen and (max-width: 768px) {
