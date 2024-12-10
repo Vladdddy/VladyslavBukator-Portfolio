@@ -336,15 +336,15 @@ body {
 }
 
 .info-cont:nth-child(2) {
-    transition-delay: 200ms;
+    transition-delay: 100ms;
 }
 
 .info-cont:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 }
 
 .info-cont:nth-child(4) {
-    transition-delay: 600ms;
+    transition-delay: 300ms;
 }
 
 .port-cont:nth-child(2) {
