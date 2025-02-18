@@ -11,8 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a,
-button {
+* {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
