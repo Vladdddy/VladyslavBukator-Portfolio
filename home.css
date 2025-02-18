@@ -2,6 +2,7 @@
 
 .hero {
     height: 80vh;
+    overflow: hidden;
 }
 
 .hero-content {
