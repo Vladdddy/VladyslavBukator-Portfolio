@@ -152,6 +152,7 @@ nav {
     font-weight: 500;
     transition: 0.3s all;
     cursor: pointer;
+    overflow: hidden;
 
     &:hover {
         background: var(--primary-color-hover);

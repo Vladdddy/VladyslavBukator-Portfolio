@@ -185,6 +185,7 @@
             & .live {
                 width: 200px;
                 cursor: not-allowed;
+                overflow: hidden;
 
                 & svg {
                     color: var(--background-color);
