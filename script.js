@@ -1,104 +1,80 @@
-function main() {
-    /* -------------navbar------------- */
-    const menuBtn = document.getElementById("menu");
-    const menuText = document.getElementById("menuText");
-    const menuContainer = document.getElementById("menuContainer");
-    menuContainer.style.display = "none";
+function accordion1() {
+    const bottom1 = document.getElementById("bottom1");
+    const addLine1 = document.getElementById("addLine1");
 
-    menuBtn.addEventListener("click", () => {
-        if (menuContainer.style.display == "none") {
-            menuContainer.style.display = "flex";
-        } else {
-            menuContainer.style.display = "none";
-        }
-    });
-
-    menuText.addEventListener("click", () => {
-        menuContainer.style.display = "none";
-    });
-
-    /* -------------dropdown------------- */
-    const skillsButtonText1 = document.getElementById("skillsButtonText1");
-    const skillsButtonText2 = document.getElementById("skillsButtonText2");
-    const dropdown1 = document.getElementById("dropdown1");
-    const dropdown2 = document.getElementById("dropdown2");
-    const btnDefault = document.getElementById("btnDefault");
-    const btnJavascript = document.getElementById("btnJavascript");
-    const backendText = document.getElementById("backendText");
-    const frontendText = document.getElementById("frontendText");
-    const choice = document.getElementById("choice");
-    const arrowIconDown = document.getElementById("arrowIconDown");
-    const deleteIcon = document.getElementById("deleteIcon");
-    const backendContent = document.getElementById("backendContent");
-    const frontendContent = document.getElementById("frontendContent");
-
-    dropdown1.addEventListener("click", () => {
-        if (skillsButtonText1.textContent.includes("show")) {
-            btnDefault.style.display = "none";
-            btnJavascript.style.display = "block";
-            choice.style.display = "flex";
-        } else {
-            skillsButtonText1.textContent = "show"
-            skillsButtonText2.textContent = "show"
-        }
-
-        deleteIcon.style.display = "none";
-        arrowIconDown.style.display = "flex";
-        backendContent.style.display = "flex";
-        frontendContent.style.display = "flex";
-        dropdown1.style.backgroundColor = "var(--primary-color)";
-    });
-
-    dropdown2.addEventListener("click", () => {
-        btnJavascript.style.display = "none";
-        btnDefault.style.display = "block";
-    });
-
-    backendText.addEventListener("click", () => {
-        skillsButtonText1.textContent = "backend";
-        skillsButtonText2.textContent = "backend";
-        choice.style.display = "none";
-        btnJavascript.style.display = "none";
-        btnDefault.style.display = "block";
-        arrowIconDown.style.display = "none";
-        deleteIcon.style.display = "flex";
-        backendContent.style.display = "flex";
-        frontendContent.style.display = "none";
-        dropdown1.style.backgroundColor = "red";
-    });
-
-    frontendText.addEventListener("click", () => {
-        skillsButtonText1.textContent = "frontend";
-        skillsButtonText2.textContent = "frontend";
-        choice.style.display = "none";
-        btnJavascript.style.display = "none";
-        btnDefault.style.display = "block";
-        arrowIconDown.style.display = "none";
-        deleteIcon.style.display = "flex";
-        backendContent.style.display = "none";
-        frontendContent.style.display = "flex";
-        dropdown1.style.backgroundColor = "var(--primary-color)";
-    });
-
-    /* -------------courses------------- */
-    const stageButton = document.getElementById("stageButton");
-    const courseButton = document.getElementById("courseButton");
-    const stageText = document.getElementById("stageText");
-    const courseText = document.getElementById("courseText");
-
-    stageButton.addEventListener("click", () => {
-        stageText.style.display = "flex";
-        courseText.style.display = "none";
-        stageButton.classList.add("active");
-        courseButton.classList.remove("active");
-    });
-
-    courseButton.addEventListener("click", () => {
-        stageText.style.display = "none";
-        courseText.style.display = "flex";
-        stageButton.classList.remove("active");
-        courseButton.classList.add("active");
-    });
+    if (bottom1.style.display == "flex") {
+        bottom1.style.display = "none";
+        addLine1.style.opacity = 1;
+    } else {
+        bottom1.style.display = "flex";
+        addLine1.style.opacity = 0;
+    }
 }
 
-main();
+function accordion2() {
+    const bottom2 = document.getElementById("bottom2");
+    const addLine2 = document.getElementById("addLine2");
+
+    if (bottom2.style.display == "flex") {
+        bottom2.style.display = "none";
+        addLine2.style.opacity = 1;
+    } else {
+        bottom2.style.display = "flex";
+        addLine2.style.opacity = 0;
+    }
+}
+
+function accordion3() {
+    const bottom3 = document.getElementById("bottom3");
+    const addLine3 = document.getElementById("addLine3");
+
+    if (bottom3.style.display == "flex") {
+        bottom3.style.display = "none";
+        addLine3.style.opacity = 1;
+    } else {
+        bottom3.style.display = "flex";
+        addLine3.style.opacity = 0;
+    }
+}
+
+function accordion4() {
+    const bottom4 = document.getElementById("bottom4");
+    const addLine4 = document.getElementById("addLine4");
+
+    if (bottom4.style.display == "flex") {
+        bottom4.style.display = "none";
+        addLine4.style.opacity = 1;
+    } else {
+        bottom4.style.display = "flex";
+        addLine4.style.opacity = 0;
+    }
+}
+
+function openMenu() {
+    const menu = document.getElementById("menu");
+    const menuContent = document.getElementById("menuContent");
+    const lineToggle = document.getElementById("lineToggle");
+    const lineToggle2 = document.getElementById("lineToggle2");
+
+    if (menuContent.style.opacity == 0) {
+        menuContent.style.opacity = 1;
+        menuContent.style.zIndex = 1;
+        menuContent.style.animation = "menu 0.3s linear";
+        menu.style.position = "fixed";
+        menu.style.animation = "menu 0.3s linear";
+        lineToggle.style.opacity = 0;
+        lineToggle2.style.opacity = 0;
+        lineToggle.style.animation = "menuIcon 0.3s linear";
+        lineToggle2.style.animation = "menuIcon 0.3s linear";
+    } else {
+        menuContent.style.opacity = 0;
+        menuContent.style.zIndex = -1;
+        menuContent.style.animation = "none";
+        menu.style.position = "static";
+        menu.style.animation = "none";
+        lineToggle.style.opacity = 1;
+        lineToggle2.style.opacity = 1;
+        lineToggle.style.animation = "none";
+        lineToggle2.style.animation = "none";
+    }
+}

@@ -1,0 +1,171 @@
+/*---------Hero---------*/
+
+.hero {
+    height: auto;
+}
+
+.big-title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: var(--title-size-50);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+
+    & .about-tailor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+
+        & h2 {
+            font-size: var(--text-size-20);
+        }
+
+        & .paragraph {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            color: var(--subtext-color);
+            font-size: var(--small-text-size-16);
+        }
+    }
+
+    & .image {
+        & img {
+            width: 30vw;
+        }
+    }
+
+    & .figma-image {
+        & img {
+            width: 30vw;
+        }
+    }
+}
+
+/*---------Sections---------*/
+
+.other-section {
+    margin-top: 4rem;
+    height: auto;
+}
+
+.reverse-content {
+    display: flex;
+    flex-direction: column;
+
+    & .paragraph {
+        width: 50vw;
+    }
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & .image {
+        & img {
+            width: 30vw;
+        }
+    }
+}
+
+.paragraph-small {
+    width: 30vw;
+}
+
+.button-homepage {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+
+    & button {
+        font-size: var(--small-text-size-16);
+        font-weight: 500;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-----------------------------Responsive mobile-----------------------------*/
+
+@media only screen and (max-width: 767px) {
+    .big-title {
+        font-size: var(--smaller-title-size-30);
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 4rem;
+
+        & .about-tailor {
+            gap: 2rem;
+
+            & h2 {
+                font-size: var(--smaller-title-size-30);
+            }
+
+            & .paragraph {
+                gap: 1rem;
+                font-size: var(--text-size-20);
+            }
+        }
+
+        & .image {
+            & img {
+                width: 60vw;
+            }
+        }
+
+        & .figma-image {
+            padding: 1rem;
+            & img {
+                width: 80vw;
+            }
+        }
+    }
+
+    /*---------Sections---------*/
+
+    .reverse-content {
+        & .paragraph {
+            width: 90vw;
+        }
+    }
+
+    .image-row {
+        flex-direction: column;
+
+        & .image {
+            & img {
+                width: 60vw;
+            }
+        }
+    }
+
+    .paragraph-small {
+        width: 90vw;
+    }
+
+    .button-homepage {
+        margin-top: 4rem;
+        & .button {
+            font-size: var(--text-size-20);
+
+            &:hover {
+                background: var(--primary-color);
+                color: var(--background-color);
+            }
+        }
+    }
+}

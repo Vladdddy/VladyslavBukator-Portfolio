@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="home.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="navbar-laptop">
+            <nav>
+                <div class="home-icon">
+                    <a href="home.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M2.35157 13.2135C1.99855 10.9162 1.82204 9.76763 2.25635 8.74938C2.69065 7.73112 3.65421 7.03443 5.58132 5.64106L7.02117 4.6C9.41847 2.86667 10.6171 2 12.0002 2C13.3832 2 14.5819 2.86667 16.9792 4.6L18.419 5.64106C20.3462 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6488 13.2135L21.3478 15.1724C20.8473 18.4289 20.5971 20.0572 19.4292 21.0286C18.2613 22 16.5538 22 13.139 22H10.8614C7.44652 22 5.73909 22 4.57118 21.0286C3.40327 20.0572 3.15305 18.4289 2.65261 15.1724L2.35157 13.2135Z"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                class="line"
+                                d="M12.0002 18L12.0002 15"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="navbar-text">
+                    <a class="navtext" href="#projects">Projects</a>
+                    <a class="navtext" href="#skills">Skills</a>
+                    <a class="navtext" href="#workflow">Workflow</a>
+                </div>
+
+                <a href="mailto:bukatorvladyslav@gmail.com">
+                    <button class="button">CONTACT ME</button>
+                </a>
+            </nav>
+        </header>
+
+        <header class="navbar-mobile">
+            <nav>
+                <div class="home-icon">
+                    <a href="home.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M2.35157 13.2135C1.99855 10.9162 1.82204 9.76763 2.25635 8.74938C2.69065 7.73112 3.65421 7.03443 5.58132 5.64106L7.02117 4.6C9.41847 2.86667 10.6171 2 12.0002 2C13.3832 2 14.5819 2.86667 16.9792 4.6L18.419 5.64106C20.3462 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6488 13.2135L21.3478 15.1724C20.8473 18.4289 20.5971 20.0572 19.4292 21.0286C18.2613 22 16.5538 22 13.139 22H10.8614C7.44652 22 5.73909 22 4.57118 21.0286C3.40327 20.0572 3.15305 18.4289 2.65261 15.1724L2.35157 13.2135Z"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                class="line"
+                                d="M12.0002 18L12.0002 15"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="menu-icon" id="menu" onclick="openMenu()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width=""
+                        height=""
+                        color="#000000"
+                        fill="none"
+                    >
+                        <path
+                            id="lineToggle"
+                            d="M4 5L16 5"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M4 12L20 12"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            id="lineToggle2"
+                            d="M4 19L12 19"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+            </nav>
+
+            <div class="menu-content" id="menuContent">
+                <div class="links">
+                    <a class="navtext" href="#projects" onclick="openMenu()"
+                        >Projects</a
+                    >
+                    <a class="navtext" href="#skills" onclick="openMenu()"
+                        >Skills</a
+                    >
+                    <a class="navtext" href="#workflow" onclick="openMenu()"
+                        >Workflow</a
+                    >
+                    <a
+                        class="navtext"
+                        href="mailto:bukatorvladyslav@gmail.com"
+                        onclick="openMenu()"
+                        >Contact Me</a
+                    >
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-grid">
+            <section class="hero">
+                <div class="hero-content hidden">
+                    <div class="profile-picture">
+                        <img src="profile-pic.jpg" alt="" />
+                    </div>
+                    <div class="info">
+                        <div class="top">
+                            <h1>Vladyslav Bukator</h1>
+                            <p>Web Developer & Designer</p>
+                        </div>
+                        <div class="middle">
+                            <p>
+                                I am a 19yo Italian web developer with
+                                <strong>5 years of experience</strong> in both
+                                <strong>frontend and backend</strong>.
+                            </p>
+                            <p>
+                                I excel at
+                                <strong>crafting intuitive UX/UI</strong>
+                                experiences that enhance usability and
+                                aesthetics.
+                            </p>
+                        </div>
+                        <div class="bottom">
+                            <a href="mailto:bukatorvladyslav@gmail.com">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width=""
+                                    height=""
+                                    color="#000000"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        class="svg-line"
+                                        d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/vladyslav-bukator-992354337/"
+                                target="_blank"
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width=""
+                                    height=""
+                                    color="#000000"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        class="svg-line"
+                                        d="M7 10V17"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        class="svg-line"
+                                        d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
+                                        stroke="currentColor"
+                                        stroke-width=""
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        class="svg-line"
+                                        d="M7.00801 7L6.99902 7"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+
+                            <a
+                                href="https://github.com/Vladdddy"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width=""
+                                    height=""
+                                    color="#000000"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M6.51734 17.1132C6.91177 17.6905 8.10883 18.9228 9.74168 19.2333M9.86428 22C8.83582 21.8306 2 19.6057 2 12.0926C2 5.06329 8.0019 2 12.0008 2C15.9996 2 22 5.06329 22 12.0926C22 19.6057 15.1642 21.8306 14.1357 22C14.1357 22 13.9267 18.5826 14.0487 17.9969C14.1706 17.4113 13.7552 16.4688 13.7552 16.4688C14.7262 16.1055 16.2043 15.5847 16.7001 14.1874C17.0848 13.1032 17.3268 11.5288 16.2508 10.0489C16.2508 10.0489 16.5318 7.65809 15.9996 7.56548C15.4675 7.47287 13.8998 8.51192 13.8998 8.51192C13.4432 8.38248 12.4243 8.13476 12.0018 8.17939C11.5792 8.13476 10.5568 8.38248 10.1002 8.51192C10.1002 8.51192 8.53249 7.47287 8.00036 7.56548C7.46823 7.65809 7.74917 10.0489 7.74917 10.0489C6.67316 11.5288 6.91516 13.1032 7.2999 14.1874C7.79575 15.5847 9.27384 16.1055 10.2448 16.4688C10.2448 16.4688 9.82944 17.4113 9.95135 17.9969C10.0733 18.5826 9.86428 22 9.86428 22Z"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section" id="projects">
+                <div class="projects-content">
+                    <div class="project-div hidden">
+                        <a href="tailor.html">
+                            <div class="img-project">
+                                <img src="img-projects/tailor.jpg" alt="" />
+                            </div>
+                        </a>
+
+                        <div class="info-project">
+                            <h1>Giovanna & Graciela Sartoria</h1>
+                            <p>
+                                A refined and elegant website for a local
+                                tailor's shop.
+                            </p>
+                            <div class="buttons">
+                                <a href="tailor.html">
+                                    <button class="button read-more-btn">
+                                        read more
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width=""
+                                            height=""
+                                            color="#000000"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M20.0001 11.9998L4.00012 11.9998"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </button>
+                                </a>
+
+                                <button
+                                    class="button live"
+                                    title="Project is not yet online"
+                                >
+                                    live website
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width=""
+                                        height=""
+                                        color="#000000"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-div hidden">
+                        <a href="samsung.html">
+                            <div class="img-project">
+                                <img src="img-projects/samsung.jpg" alt="" />
+                            </div>
+                        </a>
+
+                        <div class="info-project">
+                            <h1>Samsung Galaxy Book3 360</h1>
+                            <p>
+                                A promotional website showcasing Samsung's
+                                notebook.
+                            </p>
+                            <div class="buttons">
+                                <a href="samsung.html">
+                                    <button class="button read-more-btn">
+                                        read more
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            width=""
+                                            height=""
+                                            color="#000000"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M20.0001 11.9998L4.00012 11.9998"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </button>
+                                </a>
+
+                                <button
+                                    class="button live"
+                                    title="Project is not yet online"
+                                >
+                                    live website
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width=""
+                                        height=""
+                                        color="#000000"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="projects-text">New projects are coming soon!</p>
+                </div>
+            </section>
+
+            <section class="skills-section" id="skills">
+                <div class="title-skills hidden">
+                    <h1>Key Strengths</h1>
+                    <p>
+                        I approach my work with professionalism and dedication.
+                        These are my areas of expertise.
+                    </p>
+                </div>
+
+                <div class="skills-cont">
+                    <div class="skill-div hidden">
+                        <div class="big-skill-title">
+                            <h1>UX/UI Design</h1>
+                            <div class="absolute-img">
+                                <img src="img-skills/web-design.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="element">
+                                <p class="skill-num">01.</p>
+                                <p>Wireframing</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">02.</p>
+                                <p>Prototyping</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">03.</p>
+                                <p>Figma</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">04.</p>
+                                <p>Photoshop</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">05.</p>
+                                <p>Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-div reverse hidden">
+                        <div class="list">
+                            <div class="element">
+                                <p class="skill-num">01.</p>
+                                <p>HTML</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">02.</p>
+                                <p>CSS</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">03.</p>
+                                <p>Javascript</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">04.</p>
+                                <p>Typescript</p>
+                            </div>
+                        </div>
+                        <div class="big-skill-title">
+                            <h1>Web Dev</h1>
+                            <div class="absolute-img">
+                                <img src="img-skills/responsive.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-div hidden">
+                        <div class="big-skill-title">
+                            <h1>Backend</h1>
+                            <div class="absolute-img">
+                                <img
+                                    src="img-skills/tools-and-utensils.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="element">
+                                <p class="skill-num">01.</p>
+                                <p>Java</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">02.</p>
+                                <p>Python</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">03.</p>
+                                <p>C</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">04.</p>
+                                <p>Php</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">05.</p>
+                                <p>SQL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-div reverse hidden">
+                        <div class="list">
+                            <div class="element">
+                                <p class="skill-num">01.</p>
+                                <p>Git</p>
+                            </div>
+
+                            <div class="element">
+                                <p class="skill-num">02.</p>
+                                <p>Github</p>
+                            </div>
+                        </div>
+                        <div class="big-skill-title">
+                            <h1>Version Control</h1>
+                            <div class="absolute-img">
+                                <img src="img-skills/git.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="workflow-section" id="workflow">
+                <div class="accordion-content hidden">
+                    <div class="accordion-element" onclick="accordion1()">
+                        <div class="top">
+                            <div class="left">
+                                <p>01.</p>
+                                <div class="title-workflow">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width=""
+                                        height=""
+                                        color="#000000"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M16.0001 16.5L20 20.5"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M18 11.5C18 15.366 14.866 18.5 11 18.5C7.13401 18.5 4 15.366 4 11.5C4 7.63404 7.13401 4.50003 11 4.50003"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M15.5 3.50003L15.7579 4.19706C16.0961 5.11105 16.2652 5.56805 16.5986 5.90142C16.932 6.2348 17.389 6.4039 18.303 6.74211L19 7.00003L18.303 7.25795C17.389 7.59616 16.932 7.76527 16.5986 8.09864C16.2652 8.43201 16.0961 8.88901 15.7579 9.803L15.5 10.5L15.2421 9.803C14.9039 8.88901 14.7348 8.43201 14.4014 8.09864C14.068 7.76527 13.611 7.59616 12.697 7.25795L12 7.00003L12.697 6.74211C13.611 6.4039 14.068 6.2348 14.4014 5.90142C14.7348 5.56805 14.9039 5.11105 15.2421 4.19706L15.5 3.50003Z"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <h1>UX Research</h1>
+                                </div>
+                            </div>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width=""
+                                height=""
+                                color="#000000"
+                                fill="none"
+                            >
+                                <path
+                                    id="addLine1"
+                                    class="add-line"
+                                    d="M12 4V20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4 12H20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="bottom" id="bottom1">
+                            <p>
+                                I approach UX research with a user-centered
+                                mindset, ensuring that every design decision is
+                                backed by data and real user insights.
+                            </p>
+                            <p>
+                                My process begins with understanding the target
+                                audience through competitor analysis, user
+                                interviews, and surveys. I then create user
+                                personas and journey maps to identify weak
+                                points and opportunities for improvement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-element" onclick="accordion2()">
+                        <div class="top">
+                            <div class="left">
+                                <p>02.</p>
+                                <div class="title-workflow">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width=""
+                                        height=""
+                                        color="#000000"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M12.4417 14.553L10.1358 17.2531C9.14121 18.4177 8.6439 19 8 19C7.3561 19 6.85879 18.4177 5.86418 17.2531L3.55829 14.553C2.51943 13.3366 2 12.7284 2 12C2 11.2716 2.51943 10.6634 3.55829 9.44699L5.86418 6.74694C6.85879 5.58231 7.3561 5 8 5C8.6439 5 9.14121 5.58231 10.1358 6.74694L12.4417 9.44699C13.4806 10.6634 14 11.2716 14 12C14 12.7284 13.4806 13.3366 12.4417 14.553Z"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M13 19L16.5118 14.6032C17.5039 13.361 18 12.7398 18 12C18 11.2602 17.5039 10.639 16.5118 9.39683L13 5"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M17 19L20.5118 14.6032C21.5039 13.361 22 12.7398 22 12C22 11.2602 21.5039 10.639 20.5118 9.39683L17 5"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <h1>Wireframe and Prototyping</h1>
+                                </div>
+                            </div>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width=""
+                                height=""
+                                color="#000000"
+                                fill="none"
+                            >
+                                <path
+                                    id="addLine2"
+                                    class="add-line"
+                                    d="M12 4V20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4 12H20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="bottom" id="bottom2">
+                            <p>
+                                I start by defining the information architecture
+                                and layout through low-fidelity wireframes,
+                                ensuring a logical and seamless user flow.
+                            </p>
+                            <p>
+                                Using Figma, I create interactive prototypes to
+                                simulate real user experiences, allowing for
+                                early testing and feedback.
+                            </p>
+                            <p>
+                                This iterative process ensures that the final
+                                design is both functional and visually
+                                compelling before development begins.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-element" onclick="accordion3()">
+                        <div class="top">
+                            <div class="left">
+                                <p>03.</p>
+                                <div class="title-workflow">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width=""
+                                        height=""
+                                        color="#000000"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M7.49478 13.753C10.5833 10.1644 17.5788 3.15478 20.5387 3.00445C22.3699 2.82906 18.7218 9.32547 10.0785 16.4339M11.4581 10.0449L13.7157 12.3249M3 20.8546C3.70948 18.3472 3.26187 19.5794 3.50407 16.6919C3.63306 16.2644 3.89258 14.9377 5.51358 14.2765C7.35618 13.5249 8.70698 14.6611 9.05612 15.195C10.0847 16.3102 10.2039 17.6952 9.05612 19.2774C7.9083 20.8596 4.50352 21.2527 3 20.8546Z"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <h1>Design</h1>
+                                </div>
+                            </div>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width=""
+                                height=""
+                                color="#000000"
+                                fill="none"
+                            >
+                                <path
+                                    id="addLine3"
+                                    class="add-line"
+                                    d="M12 4V20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4 12H20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="bottom" id="bottom3">
+                            <p>
+                                Finally, I integrate all the previous steps to
+                                create a detailed and well-considered design,
+                                informed by thorough research and insights. For
+                                each client, I typically present 2 design
+                                options, allowing them to choose the one that
+                                best aligns with their vision.
+                            </p>
+                            <p>
+                                The design process generally takes between 1 to
+                                2 weeks to complete, with smaller projects
+                                requiring only a few days for finalization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-element" onclick="accordion4()">
+                        <div class="top">
+                            <div class="left">
+                                <p>04.</p>
+                                <div class="title-workflow">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width=""
+                                        height=""
+                                        color="#000000"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M20 14.5V6.5C20 4.61438 20 3.67157 19.4142 3.08579C18.8284 2.5 17.8856 2.5 16 2.5H8C6.11438 2.5 5.17157 2.5 4.58579 3.08579C4 3.67157 4 4.61438 4 6.5V14.5"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M3.49762 15.5154L4.01953 14.5H19.9518L20.5023 15.5154C21.9452 18.177 22.3046 19.5077 21.7561 20.5039C21.2077 21.5 19.7536 21.5 16.8454 21.5L7.15462 21.5C4.24642 21.5 2.79231 21.5 2.24387 20.5039C1.69543 19.5077 2.05474 18.177 3.49762 15.5154Z"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M15.5 7L16.4199 7.79289C16.8066 8.12623 17 8.29289 17 8.5C17 8.70711 16.8066 8.87377 16.4199 9.20711L15.5 10"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M8.5 7L7.58009 7.79289C7.19337 8.12623 7 8.29289 7 8.5C7 8.70711 7.19336 8.87377 7.58009 9.20711L8.5 10"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M13 6L11 11"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <h1>Development</h1>
+                                </div>
+                            </div>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width=""
+                                height=""
+                                color="#000000"
+                                fill="none"
+                            >
+                                <path
+                                    id="addLine4"
+                                    class="add-line"
+                                    d="M12 4V20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4 12H20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="bottom" id="bottom4">
+                            <p>
+                                Once the design is finalized, I move into the
+                                development phase, translating the design into a
+                                fully functional website.
+                            </p>
+                            <p>
+                                I write clean, efficient code, ensuring
+                                cross-browser compatibility, optimal
+                                performance, and responsiveness across all
+                                devices.
+                            </p>
+                            <p>
+                                The coding process involves implementing
+                                front-end technologies such as HTML, CSS and
+                                JavaScript, as well as back-end functionality
+                                where needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="copyright">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width=""
+                            height=""
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-copyright"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
+                        </svg>
+                        <p>Vladyslav Bukator. All rights reserved.</p>
+                    </div>
+                    <div class="tags">
+                        <p>bukatorvladyslav@gmail.com</p>
+                        <p>+39 371 160 8906</p>
+                        <p>Italy, Varese</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script defer src="scroll.js"></script>
+    </body>
+</html>

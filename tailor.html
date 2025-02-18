@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="tailor.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="navbar-laptop">
+            <nav>
+                <div class="home-icon">
+                    <a href="home.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M2.35157 13.2135C1.99855 10.9162 1.82204 9.76763 2.25635 8.74938C2.69065 7.73112 3.65421 7.03443 5.58132 5.64106L7.02117 4.6C9.41847 2.86667 10.6171 2 12.0002 2C13.3832 2 14.5819 2.86667 16.9792 4.6L18.419 5.64106C20.3462 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6488 13.2135L21.3478 15.1724C20.8473 18.4289 20.5971 20.0572 19.4292 21.0286C18.2613 22 16.5538 22 13.139 22H10.8614C7.44652 22 5.73909 22 4.57118 21.0286C3.40327 20.0572 3.15305 18.4289 2.65261 15.1724L2.35157 13.2135Z"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                class="line"
+                                d="M12.0002 18L12.0002 15"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="navbar-text">
+                    <a class="navtext" href="">Projects</a>
+                    <a class="navtext" href="">Skills</a>
+                    <a class="navtext" href="">Workflow</a>
+                </div>
+
+                <button class="button">CONTACT ME</button>
+            </nav>
+        </header>
+
+        <header class="navbar-mobile">
+            <nav>
+                <div class="home-icon">
+                    <a href="home.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M2.35157 13.2135C1.99855 10.9162 1.82204 9.76763 2.25635 8.74938C2.69065 7.73112 3.65421 7.03443 5.58132 5.64106L7.02117 4.6C9.41847 2.86667 10.6171 2 12.0002 2C13.3832 2 14.5819 2.86667 16.9792 4.6L18.419 5.64106C20.3462 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6488 13.2135L21.3478 15.1724C20.8473 18.4289 20.5971 20.0572 19.4292 21.0286C18.2613 22 16.5538 22 13.139 22H10.8614C7.44652 22 5.73909 22 4.57118 21.0286C3.40327 20.0572 3.15305 18.4289 2.65261 15.1724L2.35157 13.2135Z"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                class="line"
+                                d="M12.0002 18L12.0002 15"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="menu-icon" id="menu" onclick="openMenu()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width=""
+                        height=""
+                        color="#000000"
+                        fill="none"
+                    >
+                        <path
+                            id="lineToggle"
+                            d="M4 5L16 5"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M4 12L20 12"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            id="lineToggle2"
+                            d="M4 19L12 19"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+            </nav>
+
+            <div class="menu-content" id="menuContent">
+                <div class="links">
+                    <a href=""><p>Projects</p></a>
+                    <a href=""><p>Skills</p></a>
+                    <a href=""><p>Workflow</p></a>
+                    <a href=""><p>Contact Me</p></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-grid">
+            <section class="hero hidden">
+                <h1 class="big-title">Giovanna & Graciela Sartoria</h1>
+
+                <div class="content">
+                    <div class="about-tailor">
+                        <h2>The process</h2>
+
+                        <div class="paragraph">
+                            <p>
+                                I strategically utilized white spaces to enhance
+                                the overall aesthetic and create a clean,
+                                refined user experience.
+                            </p>
+
+                            <p>
+                                The primary target audience consisted of older
+                                individuals, as well as those in need of
+                                clothing repairs or custom tailoring.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="tailor-img/tailor-hero.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="other-section hidden">
+                <div class="content reverse-content">
+                    <div class="about-tailor">
+                        <h2>Colors</h2>
+
+                        <div class="paragraph">
+                            <p>
+                                I primarly used 2 colors for the website:
+                                <strong>Burgundy</strong> and
+                                <strong>Pale Silver</strong>.
+                            </p>
+
+                            <p>
+                                To avoid overwhelming the user, I focused on a
+                                minimal color palette. I selected these two
+                                deeper tones to ensure optimal visibility and
+                                contrast, enhancing the overall user experience
+                                while maintaining a clean and sophisticated
+                                aesthetic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="tailor-img/tailor-colors.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="other-section hidden">
+                <div class="content reverse-content">
+                    <div class="image-row">
+                        <div class="image">
+                            <img src="tailor-img/tailor-style.png" alt="" />
+                        </div>
+
+                        <div class="image image-small">
+                            <img src="tailor-img/tailor-style2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="about-tailor">
+                        <h2>Styling</h2>
+
+                        <div class="paragraph">
+                            <p>
+                                This was my first time working on this
+                                particular design, and I relished the challenge
+                                of stepping away from my usual style, which
+                                tends to be round and modern. Instead, I created
+                                a more elegant and premium aesthetic, ensuring
+                                that it appeals to a wide range of users while
+                                maintaining sophistication and timeless appeal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="other-section hidden">
+                <div class="content">
+                    <div class="figma-image">
+                        <img src="tailor-img/figma.jpg" alt="" />
+                    </div>
+
+                    <div class="about-tailor">
+                        <h2>UX Research, Wireframe & Design</h2>
+
+                        <div class="paragraph paragraph-small">
+                            <p>
+                                My design process began with a thought analysis
+                                of competitor websites to understand industry
+                                standards and trends. However, I chose not to
+                                conduct a direct benchmark for this particular
+                                website due to its inherent simplicity.
+                            </p>
+
+                            <p>
+                                I then proceeded to create a wireframe with a
+                                clear, logical structure to ensure seamless user
+                                navigation.
+                            </p>
+
+                            <p>
+                                While the design initially presented some
+                                challenges, I quickly adapted and refined it,
+                                ultimately creating both the design and its
+                                responsive version to ensure a polished and
+                                user-friendly experience across all devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="button-homepage">
+                <a href="home.html">
+                    <button class="button">back to home</button>
+                </a>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="copyright">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width=""
+                            height=""
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-copyright"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
+                        </svg>
+                        <p>Vladyslav Bukator. All rights reserved.</p>
+                    </div>
+                    <div class="tags">
+                        <p>bukatorvladyslav@gmail.com</p>
+                        <p>+39 371 160 8906</p>
+                        <p>Italy, Varese</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script defer src="scroll.js"></script>
+    </body>
+</html>
