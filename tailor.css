@@ -86,6 +86,7 @@
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+    overflow: hidden;
 
     & button {
         font-size: var(--small-text-size-16);
