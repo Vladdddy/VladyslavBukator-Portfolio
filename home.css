@@ -119,7 +119,9 @@
             border-radius: 16px;
 
             & img {
-                width: 25vw;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
                 border-radius: 1rem;
                 cursor: pointer;
                 transition: 0.3s all;
@@ -185,7 +187,6 @@
 
             & .live {
                 width: 200px;
-                cursor: not-allowed;
                 overflow: hidden;
 
                 & svg {
@@ -216,7 +217,7 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    margin-top: 8rem;
+    margin-bottom: 2rem;
 
     & h1 {
         font-size: var(--title-size-50);
@@ -444,6 +445,7 @@
 
             & .img-project {
                 width: 90vw;
+
                 & img {
                     width: 90vw;
 

@@ -1,0 +1,243 @@
+/*---------Projects---------*/
+
+.projects-section {
+    height: auto;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    overflow: hidden;
+
+    & .projects-text {
+        color: var(--subtext-color);
+        font-size: var(--small-text-size-16);
+    }
+
+    & .border-project {
+        border: 2px solid var(--primary-color-hover);
+    }
+
+    & .project-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+
+        & .img-project {
+            width: 25vw;
+            overflow: hidden;
+            border-radius: 16px;
+
+            & img {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+                border-radius: 1rem;
+                cursor: pointer;
+                transition: 0.3s all;
+
+                &:hover {
+                    scale: 1.1;
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        & .info-project {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            & h1 {
+                font-size: var(--smaller-title-size-30);
+                color: var(--text-color);
+            }
+
+            & p {
+                font-size: var(--small-text-size-16);
+                color: var(--subtext-color);
+                width: 25vw;
+            }
+
+            & a {
+                text-decoration: none;
+            }
+
+            & .buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                margin-top: 1rem;
+                overflow: hidden;
+
+                & .read-more-btn {
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 16px;
+                    border: 1px solid var(--text-color);
+                    padding: 1rem;
+                    background: transparent;
+                    color: var(--text-color);
+                    font-size: var(--small-text-size-16);
+                    font-weight: 500;
+                    transition: 0.3s all;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: var(--primary-color);
+                        color: var(--background-color);
+                        border: 1px solid var(--primary-color);
+
+                        & svg {
+                            color: var(--background-color);
+                        }
+                    }
+                }
+            }
+
+            & .live {
+                width: 200px;
+                overflow: hidden;
+
+                & svg {
+                    color: var(--background-color);
+                    fill: var(--background-color);
+                    transition: 0.3s all;
+                }
+
+                &:hover {
+                    & svg {
+                        color: var(--primary-color);
+                        fill: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    & h1 {
+        font-size: var(--title-size-50);
+        color: var(--text-color);
+    }
+
+    & p {
+        font-size: var(--small-text-size-16);
+        color: var(--subtext-color);
+    }
+}
+
+.button-homepage {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+
+    & button {
+        font-size: var(--small-text-size-16);
+        font-weight: 500;
+        overflow: hidden;
+    }
+}
+
+/*-----------------------------Responsive mobile-----------------------------*/
+
+@media only screen and (max-width: 767px) {
+    /*---------Projects---------*/
+
+    .projects-section {
+        height: auto;
+    }
+
+    .projects-content {
+        gap: 4rem;
+
+        & .project-div {
+            flex-direction: column;
+            gap: 1rem;
+
+            & .img-project {
+                width: 90vw;
+
+                & img {
+                    width: 90vw;
+
+                    &:hover {
+                        scale: 1;
+                        filter: brightness(100%);
+                    }
+                }
+            }
+
+            & .info-project {
+                & .buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin-top: 1rem;
+
+                    & .read-more-btn {
+                        width: 90vw;
+                        font-size: var(--text-size-20);
+
+                        &:hover {
+                            background: transparent;
+                            color: var(--text-color);
+                            border: 1px solid var(--text-color);
+
+                            & svg {
+                                color: var(--text-color);
+                            }
+                        }
+                    }
+                }
+
+                & p {
+                    width: 90vw;
+                }
+
+                & .live {
+                    width: 90vw;
+
+                    & svg {
+                        color: var(--background-color);
+                        fill: var(--background-color);
+                        transition: 0.3s all;
+                    }
+
+                    &:hover {
+                        background: var(--primary-color);
+                        color: var(--background-color);
+                        & svg {
+                            color: var(--background-color);
+                            fill: var(--background-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button-homepage {
+        margin-top: 4rem;
+        & .button {
+            font-size: var(--text-size-20);
+
+            &:hover {
+                background: var(--primary-color);
+                color: var(--background-color);
+            }
+        }
+    }
+}
