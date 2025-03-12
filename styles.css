@@ -170,6 +170,18 @@ nav {
     }
 }
 
+.button-homepage {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+
+    & button {
+        font-size: var(--small-text-size-16);
+        font-weight: 500;
+        overflow: hidden;
+    }
+}
+
 .layout-grid {
     margin: 0 15vw;
 }
@@ -293,6 +305,7 @@ footer {
             position: absolute;
             top: 50%;
             left: 50%;
+            text-align: center;
             transform: translate(-50%, -50%);
 
             & a {
@@ -306,6 +319,18 @@ footer {
     .button {
         width: 90vw;
         font-size: var(--text-size-20);
+    }
+
+    .button-homepage {
+        margin-top: 4rem;
+        & .button {
+            font-size: var(--text-size-20);
+
+            &:hover {
+                background: var(--primary-color);
+                color: var(--background-color);
+            }
+        }
     }
 
     /*---------Footer---------*/
