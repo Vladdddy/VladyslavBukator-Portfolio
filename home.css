@@ -821,27 +821,3 @@
         filter: drop-shadow(0px 0px 12px var(--primary-color));
     }
 }
-
-@keyframes menu {
-    0% {
-        transform: translateX(100vw);
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-
-@keyframes menuIcon {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
