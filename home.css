@@ -143,9 +143,23 @@
                 color: var(--text-color);
             }
 
+            & span {
+                width: fit-content;
+                font-size: 16px;
+                background-color: var(--primary-color-hover);
+                padding: 0.25rem 0.5rem;
+                color: var(--primary-color);
+                border-radius: 8px;
+            }
+
             & p {
                 font-size: var(--small-text-size-16);
                 color: var(--subtext-color);
+                width: 30vw;
+
+                & a {
+                    color: var(--primary-color);
+                }
             }
 
             & a {
@@ -457,6 +471,14 @@
             }
 
             & .info-project {
+                & span {
+                    font-size: 12px;
+                }
+
+                & p {
+                    width: 90vw;
+                }
+
                 & .buttons {
                     display: flex;
                     flex-direction: column;
@@ -667,6 +689,14 @@
             }
 
             & .info-project {
+                & span {
+                    font-size: 12px;
+                }
+
+                & p {
+                    width: 70vw;
+                }
+
                 & .buttons {
                     display: flex;
                     flex-direction: column;
