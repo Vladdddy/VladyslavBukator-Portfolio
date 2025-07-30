@@ -406,6 +406,7 @@
 
     .hero-content {
         flex-direction: column;
+        margin-top: 0;
     }
 
     .info {
@@ -625,6 +626,7 @@
 
     .hero-content {
         flex-direction: column;
+        margin-top: 0;
     }
 
     .info {

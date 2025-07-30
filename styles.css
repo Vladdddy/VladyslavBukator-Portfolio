@@ -148,7 +148,7 @@ nav {
     gap: 10px;
     width: 250px;
     height: 50px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: none;
     padding: 1rem;
     background: var(--primary-color);
