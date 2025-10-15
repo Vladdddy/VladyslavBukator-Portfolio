@@ -39,7 +39,7 @@ html {
 
 :root {
     /* Colors */
-    --background-color: #f6f2ff;
+    --background-color: #ffffff;
     --text-color: #1b1b1b;
     --subtext-color: #5f5f5f;
     --primary-color: #4d00ff;
@@ -148,7 +148,7 @@ nav {
     gap: 10px;
     width: 250px;
     height: 50px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     padding: 1rem;
     background: var(--primary-color);
